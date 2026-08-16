@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CONTACT ME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Contact Me</h1>
+
+    <p>Email: practice@gmail.com</p>
+
+    <form onsubmit="sendmessage(event)">
+
+        <label>Name:</label>
+        <br>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <br><br>
+
+        <label>Message:</label>
+        <br>
+
+        <textarea
+            id="message"
+            placeholder="Write your message"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

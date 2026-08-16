@@ -1,0 +1,237 @@
+body{
+     margin:0;
+     background:linear-gradient(to right,#89f7fe,#66a6ff);;
+     font-family:Arial;
+     text-align:center;
+}
+
+  h1{
+     color:blue;
+     font-size:40px;
+}
+  
+  h2{
+     color:darkgreen;
+}
+ 
+ p{
+   color:#444;
+   font-size:20px;
+}
+
+ a{
+   color:red;
+   text-decoration:none;
+   font-size:18px;
+}
+ 
+ a:hover{
+    color:green;
+}
+
+ img{
+     width:200px;
+     border-radius:50%;
+     border:4px solid blue;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+    text-align:left;
+}
+
+.containerh 2,
+.container p,
+.container a{
+          text-align:center;
+}
+         
+
+ul{
+   list-style:square;
+}
+ 
+ol{
+  list-style:decimal;
+}
+
+table{
+width:80%;
+margin:auto;
+border-collapse:collapse;
+background:white;
+}
+
+th,td{
+border:2px solid black;
+padding:12px;
+text-align:center;
+}
+
+th{
+background:darkgreen;
+color:white;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+background:blue;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:green;
+transform:scale(1.05);
+}
+
+nav{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   gap:30px;
+   background:#222;
+   padding:15px;
+   position:sticky;
+   top:0;
+   z-index:1000;
+}
+
+nav a{
+   color:white;
+   decoration:none;
+   font-size:20px;
+   font-weight:bold;
+}
+
+nav a:hover{
+      color:yellow;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+    padding:50px 20px;
+}
+
+.hero img
+   width:220px;
+   heigth:220px;
+   border-radius:50%;
+   border:5px solid white;
+}
+
+.hero-text{
+    text-align:left;
+}
+
+.hero-text h1{
+     font-size:40px;
+}
+
+.hero-text p{
+   font-size:20px;  
+}
+
+.cards{
+   display:flex;
+   justify-content:center;
+   gap:20px;
+   margin-top:30px;
+   flex-wrap:wrap;
+}
+
+.card{
+   background:white;
+   width:200px;
+   padding:20px;
+   border-radius:10px;
+   box-shadow:0 0 10px gray;
+   text-align:center;
+   transform:0.3s;
+   max-width:90%;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card button{
+    background:darkblue;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+.card button:hover{
+    background:green;
+}
+
+.hero button{
+      background:dark blue;
+      color:white;
+      padding:12px 25px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+}
+
+.hero button:hover{
+          background:green;
+}
+
+@media (max-width:768px){
+  
+.hero{
+    flex-direction:coloum;
+}
+
+.cards{
+   flex-direction:coloum;
+}
+}
+
+progress{
+   width:80%;
+   height:20px;
+   margin-buttom:15px;
+}
+
+.dark-mode{
+    background-color:black;
+    color:white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li,
+.dark-mode td,
+.dark-mode th{
+    color:green;
+}
+
+.dark-mode .card{
+    background-color:#222;
+    color:white;
+}
+
+body.dark-mode {
+    background: linear-gradient(to right, black);
+}
